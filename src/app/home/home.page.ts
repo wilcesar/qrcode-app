@@ -12,11 +12,11 @@ import { ZXingScannerModule } from '@zxing/ngx-scanner';
   imports: [
     IonicModule,
     FormsModule,
-    ZXingScannerModule   // ✅ módulos necessários
+    ZXingScannerModule
   ]
 })
 export class HomePage implements AfterViewInit {
-  qrData: string = 'https://exemplo.com';
+  qrData: string = '';
   scannedResult: string = '';
 
   @ViewChild('canvas', { static: true }) canvas!: ElementRef<HTMLCanvasElement>;
